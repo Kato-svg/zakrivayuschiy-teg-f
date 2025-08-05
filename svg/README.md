@@ -1,1 +1,0 @@
-https://github.com/Kato-svg/zakrivayuschiy-teg-f
