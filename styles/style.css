@@ -11,7 +11,7 @@
 */
 .page {
   font-family: var(--main-font);
-  font-variation-settings: var(--main-weight);
+  font-variation-settings: 'wght' var(--main-weight);
   background-image: var(--bg-gradient);
   background-size: cover;
   min-inline-size: 320px;
@@ -57,7 +57,7 @@
 
 .card__title {
   font-size: var(--main-font-size);
-  font-variation-settings: var(--main-weight);
+  font-variation-settings: 'wght' var(--main-weight);
   padding: 5px 10px;
 }
 
