@@ -11,16 +11,17 @@
 */
 .page {
   font-family: var(--main-font);
-  font-variation-settings: var(--main-weight);
+  font-variation-settings: 'wght' var(--main-weight);
   background-image: var(--bg-gradient);
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-attachment: fixed;
 }
 
 .header {
   background-color: var(--bg-color);
-  width: var(--width-size);
+  inline-size: var(--inline-size);
   margin: 100px auto 95px;
   border: var(--border);
   font-family: var(--accent-font);
@@ -45,19 +46,20 @@
 }
 
 .main {
-  width: var(--width-size);
+  inline-size: var(--inline-size);
   margin-inline: auto;
 }
 
-.card {
+.main__card {
   background-color: var(--bg-color);
   border: var(--border);
   margin-block-end: 50px;
 }
 
+
 .card__title {
   font-size: var(--main-font-size);
-  width: var(--main-weight);
+  font-variation-settings: 'wght' var(--accent-weight);
   padding: 5px 10px;
 }
 
@@ -119,6 +121,7 @@
   .card__label {
     -webkit-text-stroke: 1px var(--bg-color);
     text-stroke: 1px var(--bg-color);
+    text-shadow: none;
   }
 }
 
@@ -138,6 +141,7 @@
   font-size: var(--main-font-size);
   font-family: var(--main-font);
   line-height: 1.15;
+  font-variation-settings: 'wght' var(--main-weight);
 }
 
 .card__button {
