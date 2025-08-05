@@ -43,6 +43,7 @@
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
+  white-space: nowrap;
 }
 
 .main {
@@ -128,7 +129,7 @@
 .card__text-block {
   display: flex;
   flex-direction: column;
-  padding: 23px 25px;
+  padding: 25px 25px;
   gap: 25px;
   
 }
@@ -148,7 +149,7 @@
   display: flex;
   justify-content: end;
   margin-inline-end: 25px;
-  margin-block-end: 22px;
+  margin-block-end: 20px;
 }
 
 .card__icon-button {
@@ -156,6 +157,7 @@
   border: 2px solid transparent;
   outline: none;
   transition: border 0.3s ease;
+  margin-block-start: 1px;
 }
 
 .card__icon-button:focus {
@@ -166,6 +168,7 @@
 .card__icon-button:focus-visible {
   border: var(--border);
   outline: none;
+  margin-inline-end: 5px;
 }
 
 .card__like-button {
@@ -184,7 +187,7 @@
   outline: none;
   padding: 0;
   transition: box-shadow 0.3s ease;
-  
+  margin-top: 5px;
 }
 
 .button::before {
@@ -281,7 +284,7 @@ dialog::backdrop {
   }
 
   .card__text-block {
-    padding: 25px 25px;
+    padding: 28px 25px;
   }
   
   .save__button {
@@ -304,5 +307,4 @@ dialog::backdrop {
     padding: 10px 110px;
     margin: 0 auto;
   }
-
 }
